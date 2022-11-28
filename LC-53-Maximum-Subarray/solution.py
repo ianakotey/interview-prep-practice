@@ -6,6 +6,11 @@ class Solution:
         return self.max_sub_kadane(nums)
 
     def max_sub_kadane(self, nums: List[int]) -> int:
+        """
+        Kadane's algorithm inspired version.
+        Took a while, and a whole lot of resources to help understand it.
+        TODO: Link resources here
+        """
 
         # cur_max : current max from beginning of array to 
         # to any index in array
@@ -33,12 +38,14 @@ class Solution:
     def max_sub_divide_conquer(self, nums: List[int]) -> int:
         """
             Divide-and-conquer version of max subarray problem
-            WIP
+            Status: WIP
+            TODO: Implement
         """
         return -1
 
 
 def test():
+
     test_runner = Solution()
 
     test_array = [-6, 0, 1, 2 ,3, -1, -2, 3, 1]
