@@ -15,6 +15,7 @@ class Solution:
 
         raise RuntimeError("Unreachable!")
 
+
 def test():
 
     test_runner = Solution()

@@ -12,7 +12,7 @@ class Solution:
         TODO: Link resources here
         """
 
-        # cur_max : current max from beginning of array to 
+        # cur_max : current max from beginning of array to
         # to any index in array
 
         # max_overall : overall maximum subarray found
@@ -26,10 +26,10 @@ class Solution:
         # (i.e. we've already dealt with the first above)
         for num in nums[1:]:
 
-            # update cur_max with the new element, 
+            # update cur_max with the new element,
             # or change it if the new element is larger than the current so far
             cur_max = max(cur_max + num, num)
-            
+
             # update the overall max if our current max is larger
             max_overall = max(max_overall, cur_max)
 
@@ -37,9 +37,9 @@ class Solution:
 
     def max_sub_divide_conquer(self, nums: List[int]) -> int:
         """
-            Divide-and-conquer version of max subarray problem
-            Status: WIP
-            TODO: Implement
+        Divide-and-conquer version of max subarray problem
+        Status: WIP
+        TODO: Implement
         """
         return -1
 
@@ -48,8 +48,9 @@ def test():
 
     test_runner = Solution()
 
-    test_array = [-6, 0, 1, 2 ,3, -1, -2, 3, 1]
+    test_array = [-6, 0, 1, 2, 3, -1, -2, 3, 1]
 
     print(test_runner.maxSubArray(test_array))
+
 
 test()
